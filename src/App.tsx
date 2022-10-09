@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import React from 'react'
+import ActiveError from './components/ActiveError'
+import LineBar from './components/LineBar'
+import PerformanceGraph from './components/PerformanceGraph'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: React.FC = () => {
+    return (
+        <div className='App'>
+            <LineBar />
+            <ActiveError />
+            <PerformanceGraph />
+        </div>
+    )
 }
 
-export default App;
+export default App
